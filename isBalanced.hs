@@ -1,5 +1,3 @@
--- 2020
-
 data Tree = Leaf Int | Node Tree Int Tree
     deriving (Show, Eq)
 
