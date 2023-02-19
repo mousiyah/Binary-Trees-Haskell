@@ -15,7 +15,7 @@ In particular, we should have flatten (mapTree f t) = map f (flatten t)<br>
 mulTree :: Tree (Tree a) -> Tree a<br>
 takes as input a tree whose leaves are labelled by trees and outputs a tree such that we have<br>
 flatten (mulTree tt) = concat (flatten (mapTree flatten tt))<br>
-for every input tree tt (you do not need to prove that either).
+for every input tree tt (you do not need to prove that either).<br>
 In particular every label of mulTree tt should occur in a tree being a label in tt.<br>
 For example, if <br>
 tt = Node [Leaf (Leaf 3),Leaf (Node [Leaf 4,Leaf 5])],<br>
