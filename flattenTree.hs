@@ -1,5 +1,3 @@
--- 2021 Q1 (e)
-
 data Tree = Leaf | Node Tree Int Tree
     deriving (Show, Eq)
 flatten :: Tree -> [Int]
